@@ -5,7 +5,7 @@ SELECT COUNT(id) AS aantal_games_uitgebracht_in_1999 FROM videogamesales WHERE y
 26 
 
 -- Opdracht 3
-SELECT COUNT(id) FROM videogamesales WHERE genre = "sports" AND NA_Sales
+SELECT SUM(NA_Sales) AS hoeveel_spellen_verkocht_in_Noord_Amerika FROM videogamesales WHERE genre = "sports" AND NA_Sales
 132 spellen
 -- Opdracht 4
 SELECT name, platform FROM videogamesales WHERE publisher ="Nintendo" AND year=1990 AND 2005 
